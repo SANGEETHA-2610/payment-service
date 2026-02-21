@@ -19,6 +19,8 @@ jobs:
           node-version: 20
 
       - run: npm install
+        env:
+            NPM_CONFIG_REGISTRY: https://registry.npmjs.org/
 
       - run: npx semantic-release
         env:
